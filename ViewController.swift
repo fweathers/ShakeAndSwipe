@@ -29,6 +29,7 @@ class ViewController: UIViewController {
         
         if event?.subtype == UIEventSubtype.motionShake {
             
+            view.backgroundColor = UIColor.white
             print("Device was shaken")
             
         }
