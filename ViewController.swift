@@ -36,6 +36,19 @@ class ViewController: UIViewController {
     
     func swiped(gesture: UIGestureRecognizer) {
         
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+            
+            switch swipeGesture.direction {
+                
+            case UISwipeGestureRecognizerDirection.right:
+                print("User swiped right")
+            case UISwipeGestureRecognizerDirection.left:
+                print("User swiped left")
+            default:
+                break
+            }
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {
