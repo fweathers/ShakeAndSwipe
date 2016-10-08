@@ -41,8 +41,10 @@ class ViewController: UIViewController {
             switch swipeGesture.direction {
                 
             case UISwipeGestureRecognizerDirection.right:
+                view.backgroundColor = UIColor.blue
                 print("User swiped right")
             case UISwipeGestureRecognizerDirection.left:
+                view.backgroundColor = UIColor.yellow
                 print("User swiped left")
             default:
                 break
